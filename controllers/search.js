@@ -13,7 +13,7 @@ exports.getSearchedBook = async (req, res) => {
     if (!err) {
       return await axios
         .get(
-          `https://www.googleapis.com/books/v1/volumes?q=${bookName}&key=${process.env.BOOK_API_KEY}`
+          `https://www.googleapis.com/books/v1/volumes?q=${bookName}&key=AIzaSyCZeI4Zb4iuBUgO9YMQnX4ZooA0rv4LxEs`
         )
         .then((value) => {
           if (value.status === 200) {
