@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd server
+cd /server/deploy
 
 npm install
 
