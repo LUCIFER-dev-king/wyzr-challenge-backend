@@ -4,9 +4,6 @@ files:
   - source: /
     destination: /server/deploy
 hooks:
-  ApplicationStop:
-    - location: scripts/application_stop.sh
-      timeout: 300
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
