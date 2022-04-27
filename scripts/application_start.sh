@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /wyzr/server/deploy
+cd wyzr/server/deploy
 
 npm install
 
