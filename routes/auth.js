@@ -19,7 +19,7 @@ router.get(
     failureRedirect: "/login",
   }),
   (req, res) => {
-    res.redirect("http://localhost:3000/search");
+    res.redirect("https://famous-scone-97c8a3.netlify.app/search");
   }
 );
 
