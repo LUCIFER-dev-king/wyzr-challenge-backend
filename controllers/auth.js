@@ -6,8 +6,9 @@ require("dotenv").config();
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
+      clientID:
+        "603258378276-7lnt9bqqqmifdbttb13g8btlk7dpo6np.apps.googleusercontent.com",
+      clientSecret: "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",
       callbackURL:
         "https://wyzr-backend.herokuapp.com/api/auth/google/callback",
     },
