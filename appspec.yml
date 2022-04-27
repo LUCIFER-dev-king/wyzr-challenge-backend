@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /wyzr/server/deploy
+    destination: /home/ec2-user/wyzr/server/deploy
 hooks:
   ApplicationStart:
     - location: scripts/application_start.sh

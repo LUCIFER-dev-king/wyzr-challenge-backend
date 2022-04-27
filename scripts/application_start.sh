@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /wyzr/server/deploy
+cd /home/ec2-user/wyzr/server/deploy
 
 npm install
 
