@@ -4,9 +4,7 @@ require("dotenv").config();
 
 exports.getSearchedBook = async (req, res) => {
   const { bookName } = req.body;
-  // const { email } = req.user;
-  const email = "luciferbuisness@gmail.com";
-  console.log(email);
+  const { email } = req.user;
   const user = await User.findOne({
     email,
   });
