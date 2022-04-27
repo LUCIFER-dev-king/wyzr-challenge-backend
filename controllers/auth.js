@@ -8,7 +8,8 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:8000/api/auth/google/callback",
+      callbackURL:
+        "https://wyzr-backend.herokuapp.com/api/api/auth/google/callback",
     },
     async (accestoken, refreshToken, profile, done) => {
       console.log(profile._json);
