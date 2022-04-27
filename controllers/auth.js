@@ -6,10 +6,9 @@ require("dotenv").config();
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-        "603258378276-7lnt9bqqqmifdbttb13g8btlk7dpo6np.apps.googleusercontent.com",
-      clientSecret: "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",
-      callbackURL: "http://localhost:8080/api/auth/google/callback",
+      clientID: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      callbackURL: "http://localhost:8000/api/auth/google/callback",
     },
     async (accestoken, refreshToken, profile, done) => {
       console.log(profile._json);
